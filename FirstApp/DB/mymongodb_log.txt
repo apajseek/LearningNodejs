@@ -1,0 +1,43 @@
+2018-02-05T02:36:39.111-0700 I CONTROL  [initandlisten] MongoDB starting : pid=18440 port=7050 dbpath=C:\Users\apurv.lall\myworkspace\webdev\mynodejs-workspace\LearningNodejs\FirstApp\DB 64-bit host=LAPSZ2936
+2018-02-05T02:36:39.112-0700 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2018-02-05T02:36:39.112-0700 I CONTROL  [initandlisten] db version v3.6.2
+2018-02-05T02:36:39.112-0700 I CONTROL  [initandlisten] git version: 489d177dbd0f0420a8ca04d39fd78d0a2c539420
+2018-02-05T02:36:39.112-0700 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.1u-fips  22 Sep 2016
+2018-02-05T02:36:39.113-0700 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-02-05T02:36:39.113-0700 I CONTROL  [initandlisten] modules: enterprise 
+2018-02-05T02:36:39.113-0700 I CONTROL  [initandlisten] build environment:
+2018-02-05T02:36:39.113-0700 I CONTROL  [initandlisten]     distmod: windows-64
+2018-02-05T02:36:39.113-0700 I CONTROL  [initandlisten]     distarch: x86_64
+2018-02-05T02:36:39.113-0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-02-05T02:36:39.113-0700 I CONTROL  [initandlisten] options: { net: { bindIp: "127.0.0.1", maxIncomingConnections: 10, port: 7050 }, security: { authorization: "enabled" }, storage: { dbPath: "C:\Users\apurv.lall\myworkspace\webdev\mynodejs-workspace\LearningNodejs\FirstApp\DB" }, systemLog: { destination: "file", path: "C:\Users\apurv.lall\myworkspace\webdev\mynodejs-workspace\LearningNodejs\FirstApp\DB\mymongodb_log.txt" } }
+2018-02-05T02:36:39.121-0700 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3521M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-02-05T02:36:39.886-0700 I CONTROL  [initandlisten] 
+2018-02-05T02:36:39.887-0700 I CONTROL  [initandlisten] ** WARNING: The file system cache of this machine is configured to be greater than 40% of the total memory. This can lead to increased memory pressure and poor performance.
+2018-02-05T02:36:39.887-0700 I CONTROL  [initandlisten] See http://dochub.mongodb.org/core/wt-windows-system-file-cache
+2018-02-05T02:36:39.887-0700 I CONTROL  [initandlisten] 
+2018-02-05T15:06:39.891+0530 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: 411e76cb-6db2-4b3f-b1b6-83a27f42aea7
+2018-02-05T15:06:40.068+0530 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
+2018-02-05T15:06:40.084+0530 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: db9309b9-9797-4523-96d9-362299cb135e
+2018-02-05T15:06:41.551+0530 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/Users/apurv.lall/myworkspace/webdev/mynodejs-workspace/LearningNodejs/FirstApp/DB/diagnostic.data'
+2018-02-05T15:06:41.554+0530 I NETWORK  [initandlisten] waiting for connections on port 7050
+2018-02-05T15:09:27.376+0530 I NETWORK  [listener] connection accepted from 127.0.0.1:54354 #1 (1 connection now open)
+2018-02-05T15:09:27.377+0530 I ACCESS   [conn1] note: no users configured in admin.system.users, allowing localhost access
+2018-02-05T15:09:27.377+0530 I NETWORK  [conn1] received client metadata from 127.0.0.1:54354 conn: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.2" }, os: { type: "Windows", name: "Microsoft Windows 10", architecture: "x86_64", version: "10.0 (build 15063)" } }
+2018-02-05T15:09:27.387+0530 I ACCESS   [conn1] Unauthorized: not authorized on admin to execute command { getLog: "startupWarnings", $db: "admin" }
+2018-02-05T15:11:41.555+0530 I STORAGE  [thread2] createCollection: config.system.sessions with generated UUID: 82fb455f-41c1-4bd2-99c6-d8faaf137af8
+2018-02-05T15:11:41.822+0530 I INDEX    [thread2] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2018-02-05T15:11:41.822+0530 I INDEX    [thread2] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2018-02-05T15:11:41.831+0530 I INDEX    [thread2] build index done.  scanned 0 total records. 0 secs
+2018-02-05T15:11:41.832+0530 I COMMAND  [thread2] command config.$cmd command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:98 locks:{ Global: { acquireCount: { r: 1, w: 1 } }, Database: { acquireCount: { W: 1 } }, Collection: { acquireCount: { w: 1 } } } protocol:op_msg 277ms
+2018-02-05T15:37:38.916+0530 I NETWORK  [conn1] end connection 127.0.0.1:54354 (0 connections now open)
+2018-02-05T20:06:14.673+0530 W FTDC     [ftdc] Uncaught exception in 'FileRenameFailed: Access is denied' in full-time diagnostic data capture subsystem. Shutting down the full-time diagnostic data capture subsystem.
+2018-02-05T21:17:10.988+0530 I CONTROL  [thread3] CTRL_CLOSE_EVENT signal
+2018-02-05T21:17:10.988+0530 I CONTROL  [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2018-02-05T21:17:11.010+0530 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2018-02-05T21:17:11.011+0530 F CONTROL  [thread2] Encountered an error in PeriodicRunnerASIO: The I/O operation has been aborted because of either a thread exit or an application request.
+2018-02-05T21:17:11.011+0530 F CONTROL  [thread2] Encountered an error in PeriodicRunnerASIO: The I/O operation has been aborted because of either a thread exit or an application request.
+2018-02-05T21:17:11.023+0530 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2018-02-05T21:17:11.093+0530 I STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2018-02-05T21:17:11.871+0530 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2018-02-05T21:17:11.872+0530 I CONTROL  [consoleTerminate] now exiting
+2018-02-05T21:17:11.881+0530 I CONTROL  [consoleTerminate] shutting down with code:12
